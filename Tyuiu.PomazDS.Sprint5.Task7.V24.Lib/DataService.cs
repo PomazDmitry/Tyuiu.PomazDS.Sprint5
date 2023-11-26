@@ -17,7 +17,7 @@ namespace Tyuiu.PomazDS.Sprint5.Task7.V24.Lib
         public string LoadDataAndSave(string path)
         {
             Regex regex = new Regex(@"\b\p{IsCyrillic}+\b");
-            string pathSaveFile = "C:\\DataSprint5\\OutPutDataFileTask7V24.txt";
+            string pathSaveFile = $"{Directory.GetCurrentDirectory()}\\OutPutDataFileTask7V24.txt";
             string str = File.ReadAllText(path);
             string replacedText = null;
 
